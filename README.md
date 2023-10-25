@@ -1,7 +1,5 @@
 # mrcrawller
 
-# mrcrawller
-
 A aplicação "mrcrawller" tem várias aplicações práticas. Algumas delas incluem:
 
 Análise de Segurança: Pode ser usada para procurar informações sensíveis ou vulnerabilidades em sites usando dorks específicas.
