@@ -18,8 +18,12 @@ Lembre-se de usar essa aplicação de maneira ética e de acordo com as leis e r
 
 
 
+https://github.com/l3on4rd0-rajj/mrcrawller/assets/98270993/d3d28a7f-dd87-4337-904d-b6aafccc88c3
 
-https://github.com/l3on4rd0-rajj/mrcrawller/assets/98270993/172440d7-52c2-4f1c-8610-8bcc49c372e9
+
+
+
+
 
 
 
