@@ -5,3 +5,4 @@ beautifulsoup4
 fake-useragent
 tqdm
 stem
+figlet
