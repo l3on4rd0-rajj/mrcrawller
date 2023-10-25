@@ -12,7 +12,7 @@ def main():
     try:
         # Exibe o logotipo "mrcrawler"
         font = pyfiglet.Figlet(font='slant')
-        print(font.renderText("mrcrawler"))
+        print(font.renderText("mrcrawller"))
 
         user = getpass.getuser()
         domain = input("Digite o domínio alvo (por exemplo, 'site:example.com'): ")
