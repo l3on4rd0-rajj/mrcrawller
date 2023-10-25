@@ -1,0 +1,7 @@
+googlesearch-python
+termcolor
+requests
+beautifulsoup4
+fake-useragent
+tqdm
+stem

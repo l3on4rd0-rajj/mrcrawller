@@ -1,0 +1,58 @@
+Titulo
+Mrcrawller.docs
+  
+Descrição
+Este código é um scraper para buscar resultados do Google de acordo com consultas específicas. Ele suporta a busca na Surface Web, na Dark Web ou em ambos os ambientes, dependendo da preferência do usuário. O código é capaz de usar a rede Tor para realizar buscas na Dark Web de forma anônima. Ele também pode ser configurado para buscar resultados para um domínio alvo específico.
+
+Autor
+Desenvolvido por Leonardo/Radesh e Willian-smach
+
+Versão
+1.1.2023
+
+Bibliotecas Utilizadas
+googlesearch: Esta biblioteca permite realizar buscas no Google e recuperar os resultados.
+random: Utilizada para gerar valores aleatórios, útil para simular um comportamento humano nas buscas.
+time: Usada para introduzir atrasos entre as buscas, para evitar bloqueios do Google.
+datetime: Utilizada para registrar timestamps em logs.
+termcolor: Usada para colorir o texto no console.
+getpass: Utilizada para obter o nome de usuário do sistema.
+requests: Usada para fazer solicitações HTTP para o Google e recuperar os resultados.
+bs4 (Beautiful Soup): Biblioteca de análise HTML e XML usada para analisar o conteúdo HTML das páginas.
+fake_useragent: Usada para gerar um agente de usuário (User-Agent) aleatório para as solicitações HTTP.
+tqdm: Usada para mostrar barras de progresso ao iniciar o Tor.
+Estrutura do Código
+O código está estruturado em várias funções e segue a seguinte estrutura:
+
+print_title(): Função para imprimir o título do programa no console.
+
+fetch_queries_from_file(file_path): Função que lê consultas de um arquivo e retorna uma lista de consultas.
+
+generate_random_user_agent(): Função que gera um User-Agent aleatório para as solicitações HTTP.
+
+get_search_results(query, user_agent): Função que realiza uma busca no Google e retorna os links dos resultados.
+
+configure_tor(): Função que configura e inicia o processo Tor para navegação anônima na Dark Web.
+
+search_with_retry(query, max_attempts=3): Função que realiza uma busca com várias tentativas em caso de erro.
+
+generate_log(query, result_count, user, activity, error=None): Função que gera um log das atividades.
+
+main(): Função principal que coordena o fluxo do programa.
+
+Funcionalidade
+O programa permite ao usuário especificar um domínio alvo (por exemplo, "site:example.com") e um arquivo contendo consultas. Ele pode operar em três modos:
+
+Surface Web (busca normal no Google)
+Dark Web (usando a rede Tor)
+Ambos (busca tanto na Surface Web quanto na Dark Web)
+O programa gera consultas combinando o domínio alvo e as consultas do arquivo e executa buscas no Google. Os resultados são exibidos no console e registrados em um arquivo de log.
+
+Uso
+Para usar o programa, siga estas etapas:
+
+Execute o código Python.
+Forneça o domínio alvo (por exemplo, "site:example.com").
+Escolha o modo de busca (Surface Web, Dark Web ou Ambos).
+Aguarde o programa realizar as buscas e exibir os resultados.
+
