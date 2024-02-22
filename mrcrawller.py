@@ -25,7 +25,7 @@ def main():
             dorks_input = input("Informe as dorks específicas separadas por vírgula: ")
             queries = [dork.strip() for dork in dorks_input.split(",")]
         else:
-            # Construa o caminho do arquivo de dorks de forma dinâmica
+            # Constroi o caminho do arquivo de dorks de forma dinâmica
             file_path = os.path.join(os.path.dirname(__file__), "dorks.txt")
             queries = fetch_queries_from_file(file_path)
 
