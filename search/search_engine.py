@@ -23,7 +23,7 @@ def search_for_queries(queries, domain, user, search_mode, tor_process):
             if results:
                 print(colored("Resultados encontrados:", 'green'))
                 for idx, result in enumerate(results, 1):
-                    print(f"{idx}. {result}")
+                    print(f"[+] {idx}. {result}")
                 generate_log(full_query, result_count, user, "Search")
             else:
                 print("\x1b[31mNenhum resultado encontrado.\x1b[0m")
